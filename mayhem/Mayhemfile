@@ -1,0 +1,8 @@
+project: trex
+target: fuzz-trex
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_trex.py
+    libfuzzer: true
